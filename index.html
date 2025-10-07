@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Solar Panel Position & Voltage Tracker</title>
     <script src="https://cdn.tailwindcss.com"></script>
-  <script type="importmap">
+    <script type="importmap">
 {
   "imports": {
     "recharts": "https://aistudiocdn.com/recharts@^3.2.1",
@@ -18,6 +17,49 @@
   }
 }
 </script>
+<style>
+  @keyframes pulse {
+    50% {
+      box-shadow: 0 0 30px 15px rgba(250, 204, 21, 0.7), 0 0 50px 30px rgba(252, 211, 77, 0.3);
+    }
+  }
+  .animate-sun-pulse {
+    animation: pulse 4s infinite ease-in-out;
+  }
+
+  @keyframes sheen {
+    0% {
+      transform: skewX(-25deg) translateX(-150%);
+    }
+    100% {
+      transform: skewX(-25deg) translateX(150%);
+    }
+  }
+  .panel-sheen {
+    position: relative;
+    overflow: hidden;
+  }
+  .panel-sheen::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
+    animation: sheen 5s infinite;
+    opacity: 0.7;
+  }
+
+  /* Add a subtle fade-in for the Gemini advice */
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-in {
+    animation: fade-in 0.5s ease-out forwards;
+  }
+</style>
 </head>
   <body class="bg-slate-900">
     <div id="root"></div>
