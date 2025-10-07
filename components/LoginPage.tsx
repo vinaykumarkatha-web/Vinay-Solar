@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Card from './Card';
-import { PanelIcon } from './Icons';
+import Card from './Card.tsx';
+import { PanelIcon } from './Icons.tsx';
 
 interface LoginPageProps {
   onLogin: () => void;

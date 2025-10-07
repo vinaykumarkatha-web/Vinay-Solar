@@ -1,10 +1,9 @@
-
 import React from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
-import { VoltageDataPoint } from '../types';
-import Card from './Card';
-import { BoltIcon } from './Icons';
-import { MAX_VOLTAGE } from '../constants';
+import { VoltageDataPoint } from '../types.ts';
+import Card from './Card.tsx';
+import { BoltIcon } from './Icons.tsx';
+import { MAX_VOLTAGE } from '../constants.ts';
 
 interface VoltageMonitorProps {
   voltageData: VoltageDataPoint[];

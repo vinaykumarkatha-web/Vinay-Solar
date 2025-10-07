@@ -1,7 +1,6 @@
-
 import { useState, useEffect } from 'react';
-import { Position, PanelPosition, VoltageDataPoint } from '../types';
-import { MAX_VOLTAGE, VOLTAGE_DATA_LENGTH, SIMULATION_SPEED_MS } from '../constants';
+import { Position, PanelPosition, VoltageDataPoint } from '../types.ts';
+import { MAX_VOLTAGE, VOLTAGE_DATA_LENGTH, SIMULATION_SPEED_MS } from '../constants.ts';
 
 // Helper to convert degrees to radians
 const toRadians = (degrees: number): number => degrees * (Math.PI / 180);

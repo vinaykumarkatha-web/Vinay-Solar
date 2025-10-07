@@ -1,7 +1,6 @@
-
 import { useState, useEffect } from 'react';
-import { Position } from '../types';
-import { SIMULATION_SPEED_MS } from '../constants';
+import { Position } from '../types.ts';
+import { SIMULATION_SPEED_MS } from '../constants.ts';
 
 const useSunPosition = (): Position => {
   const [sunPosition, setSunPosition] = useState<Position>({ azimuth: 0, altitude: 0 });

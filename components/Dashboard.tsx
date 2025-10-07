@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { PanelPosition } from '../types';
+import { PanelPosition } from '../types.ts';
 
-import useSunPosition from '../hooks/useSunPosition';
-import useVoltageData from '../hooks/useVoltageData';
+import useSunPosition from '../hooks/useSunPosition.ts';
+import useVoltageData from '../hooks/useVoltageData.ts';
 
-import SolarTracker from './SolarTracker';
-import VoltageMonitor from './VoltageMonitor';
-import GeminiAdvisor from './GeminiAdvisor';
-import { LogoutIcon } from './Icons';
+import SolarTracker from './SolarTracker.tsx';
+import VoltageMonitor from './VoltageMonitor.tsx';
+import GeminiAdvisor from './GeminiAdvisor.tsx';
+import { LogoutIcon } from './Icons.tsx';
 
 interface DashboardProps {
   onLogout: () => void;

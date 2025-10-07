@@ -1,7 +1,7 @@
 import React from 'react';
-import { Position, PanelPosition } from '../types';
-import Card from './Card';
-import { SunIcon, PanelIcon } from './Icons';
+import { Position, PanelPosition } from '../types.ts';
+import Card from './Card.tsx';
+import { SunIcon, PanelIcon } from './Icons.tsx';
 
 interface SolarTrackerProps {
   sunPosition: Position;
