@@ -1,0 +1,5 @@
+{
+  "name": "Solar Panel Position & Voltage Tracker",
+  "description": "An interactive dashboard to track and optimize solar panel positioning using real-time simulated data and AI-powered advice from Gemini. Visualize sun and panel orientation, monitor voltage output, and receive recommendations to maximize energy efficiency.",
+  "requestFramePermissions": []
+}
